@@ -1,0 +1,194 @@
+/* === CSS Reset 基礎設定 === */
+
+/* 全域重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* HTML 和 body 基礎設定 */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* 圖片和媒體 */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 表單元素 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* 連結 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+/* 表格 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 移除瀏覽器預設樣式 */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* 移動裝置優化 */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* === 專案特定樣式從這裡開始 === */
+.main-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: fixed;
+  top: 0;
+  gap: 24px;
+  padding: 16px 32px;
+}
+.index-header span {
+  color: #2f3030;
+}
+.index-header .app-icon {
+  width: 16px;
+}
+.index-header .avatar-icon {
+  width: 36px;
+}
+
+.index-main {
+  margin-top: -160px;
+  width: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.index-main .search-container {
+  width: 720px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.index-main .search-container .search-icon {
+  width: 18px;
+  position: absolute;
+  left: 32px;
+}
+.index-main .search-container .mic-icon {
+  width: 14px;
+  position: absolute;
+  right: 32px;
+}
+.index-main .search-container input {
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 8px 60px;
+  box-shadow: 0 1px 6px 0 #41414178;
+}
+.index-main .search-container input:focus {
+  outline: unset;
+}
+
+.index-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.index-footer .lang,
+.index-footer .others {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 12px 32px;
+}
+.index-footer .lang {
+  border-bottom: 2px solid #dadbe0;
+}
+.index-footer .others {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.index-footer .others .left,
+.index-footer .others .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
