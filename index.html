@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>新分頁</title>
 
-    <!-- 網站 icon -->
-    <link rel="icon" href="assets/icons/favicon.png" type="image/png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>新分頁</title>
 
-    <!-- 預載圖片 -->
-    <link rel="preload" as="image" href="assets/images/smaller_logo.png" />
+  <!-- 網站 icon -->
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <!-- 預載圖片 -->
+  <link rel="preload" as="image" href="assets/images/smaller_logo.png" />
 
-  <body>
-    <div class="main-container">
-      <header class="index-header">
-        <span>Qmail</span>
-        <span>圖片</span>
-        <img src="./assets/icons/apps.png" alt="apps_icon" class="app-icon" />
-        <img
-          src="./assets/icons/avatar.png"
-          alt="avatar_icon"
-          class="avatar-icon"
-        />
-      </header>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <main class="index-main">
-        <img src="./assets/images/smaller_logo.png" alt="logo" />
-        <div class="search-container">
-          <img
-            src="./assets/icons/search.png"
-            alt="search_icon"
-            class="search-icon"
-          />
-          <input type="text" />
-          <img src="./assets/icons/mic.png" alt="mic_icon" class="mic-icon" />
+<body>
+  <div class="main-container">
+    <header class="index-header">
+      <span>Qmail</span>
+      <span>圖片</span>
+      <img src="./assets/icons/apps.png" alt="apps_icon" class="app-icon" />
+      <img src="./assets/icons/avatar.png" alt="avatar_icon" class="avatar-icon" />
+    </header>
+
+    <main class="index-main">
+      <img src="./assets/images/smaller_logo.png" alt="logo" />
+      <form class="search-container" action="#" onsubmit="handleSearch(event)">
+        <!-- <div> -->
+        <img src="./assets/icons/search.png" alt="search_icon" class="search-icon" />
+        <input type="text" placeholder="搜尋或輸入網址" />
+        <button type="submit" class="hidden">show next mock page</button>
+        <img src="./assets/icons/mic.png" alt="mic_icon" class="mic-icon" />
+        <!-- </div> -->
+      </form>
+    </main>
+
+    <footer class="index-footer">
+      <div class="lang">
+        <span>台灣</span>
+      </div>
+      <div class="others">
+        <div class="left">
+          <span>廣告</span>
+          <span>商業</span>
+          <span>搜尋服務的運作方式</span>
         </div>
-      </main>
-
-      <footer class="index-footer">
-        <div class="lang">
-          <span>台灣</span>
+        <div class="right">
+          <span>隱私權</span>
+          <span>服務條款</span>
+          <span>設定</span>
         </div>
-        <div class="others">
-          <div class="left">
-            <span>廣告</span>
-            <span>商業</span>
-            <span>搜尋服務的運作方式</span>
-          </div>
-          <div class="right">
-            <span>隱私權</span>
-            <span>服務條款</span>
-            <span>設定</span>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+  </div>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>

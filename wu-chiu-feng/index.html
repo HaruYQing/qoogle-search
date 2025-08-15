@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>搜尋結果 | 吳秋鳳</title>
+
+  <!-- 網站 icon -->
+  <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
+
+  <!-- 預載圖片 -->
+  <link rel="preload" as="image" href="../assets/images/tiny_logo.webp" />
+  <link rel="preload" as="image" href="../assets/images/person_1.webp" />
+  <link rel="preload" as="image" href="../assets/images/person_2.webp" />
+  <link rel="preload" as="image" href="../assets/images/person_3.webp" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="result.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <div class="upper">
+        <div class="left">
+          <img src="../assets/images/tiny_logo.webp" class="tiny-logo">
+          <div class="search-container">
+            <input type="text" value="吳秋鳳">
+            <div class="icon-group">
+              <img src="../assets/icons/close_icon.png">
+              <img src="../assets/icons/mic_icon.png">
+              <img src="../assets/icons/camera_icon.png">
+              <img src="../assets/icons/seach_icon.png">
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span>Qmail</span>
+          <span>圖片</span>
+          <img src="../assets/icons/apps.png" alt="apps_icon" class="app-icon" />
+          <img src="../assets/icons/avatar.png" alt="avatar_icon" class="avatar-icon" />
+        </div>
+      </div>
+      <div class="lower">
+        <span>全部</span>
+        <span>圖片</span>
+        <span>新聞</span>
+        <span>影片</span>
+        <span>購物</span>
+        <span>地圖</span>
+        <span>短片</span>
+        <span>更多選項
+          <img src="../assets/icons/down_icon.png" class="down-icon">
+        </span>
+      </div>
+    </header>
+
+    <main class="result-main">
+      <div class="image-result">
+        <span>圖片</span>
+        <div class="img-container">
+          <img src="../assets/images/person_1.webp">
+          <img src="../assets/images/person_2.webp">
+          <img src="../assets/images/person_3.webp">
+        </div>
+      </div>
+
+      <div class="site-result"></div>
+    </main>
+
+    <em>This is a mock website for tv drama shooting purpose only</em>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
