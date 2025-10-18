@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>搜尋結果 | 包孫揚</title>
+
+  <!-- 網站 icon -->
+  <link rel="icon" href="./assets/icons/favicon.png" type="image/png" />
+
+  <!-- 預載圖片 -->
+  <!-- <link rel="preload" as="image" href="./assets/images/tiny_logo.webp" />
+  <link rel="preload" as="image" href="./assets/images/person_1.webp" />
+  <link rel="preload" as="image" href="./assets/images/person_2.webp" />
+  <link rel="preload" as="image" href="./assets/images/person_3.webp" /> -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/wu-chiu-feng/result.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <div class="upper">
+        <div class="left">
+          <img src="./assets/images/tiny_logo.webp" class="tiny-logo">
+          <div class="search-container">
+            <input type="text" value="包孫揚">
+            <div class="icon-group">
+              <img src="./assets/icons/close_icon.png">
+              <img src="./assets/icons/mic_icon.png">
+              <img src="./assets/icons/camera_icon.png">
+              <img src="./assets/icons/seach_icon.png">
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <span>Qmail</span>
+          <span>圖片</span>
+          <img src="./assets/icons/apps.png" alt="apps_icon" class="app-icon" />
+          <img src="./assets/icons/avatar-2.png" alt="avatar_icon" class="avatar-icon" />
+        </div>
+      </div>
+      <div class="lower">
+        <span>全部</span>
+        <span>圖片</span>
+        <span>新聞</span>
+        <span>影片</span>
+        <span>購物</span>
+        <span>地圖</span>
+        <span>短片</span>
+        <span>更多選項
+          <img src="./assets/icons/down_icon.png" class="down-icon">
+        </span>
+      </div>
+    </header>
+
+    <main class="result-main">
+      <div class="site-result" style="margin-top: 24px;">
+        <!-- to 台灣公司網 -->
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i-1.png" class="site-logo">
+            <div class="info-text">
+              <h4>台灣公司網</h4>
+              <span class="site-url">https://www.bizscope.com
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a onclick="navigateTo(event, 'bizscope.html')">全盛人力資源顧問有限公司</a>
+          <p>
+            全盛人力資源顧問有限公司，統編：95134603，公司所在地：新北市延西北路103號8樓，
+            電話：(02) 28953512，代表人姓名：<span class="red">包孫揚</span>，設立日期：2006年10月26日...
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i-2.png" class="site-logo">
+            <div class="info-text">
+              <h4>文化觀點報</h4>
+              <span class="site-url">https://www.culturefocus.cc/interview
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>寫作療癒人生：專訪作家包孫揚</a>
+          <p>
+            多年從事文字創作的<span class="red">包孫揚</span>，從都會觀察到人性掙扎，用故事記錄每一次內在的轉折。
+            他說：「文字是靈魂的鏡子，誠實面對自己，就是創作的起點。」
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i_growrich.png" class="site-logo">
+            <div class="info-text">
+              <h4>商訊網</h4>
+              <span class="site-url">https://www.bizinsight.tw/power
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>包孫揚：創作不是追求完美，而是記錄真實的勇氣</a>
+          <p>
+            <span class="red">包孫揚</span>在專訪中談到，創作的核心不在於結果，而在於過程中的真實與感受。
+            他認為「不完美的作品，反而最能打動人心」，強調創意應該源自生活本身。
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i-4.png" class="site-logo">
+            <div class="info-text">
+              <h4>程式設計誌</h4>
+              <span class="site-url">https://www.urbandesignplus.tw/home
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>用設計重構生活節奏：包孫揚的空間哲學</a>
+          <p>
+            身為設計師的<span class="red">包孫揚</span>，主張「簡約不是缺乏，而是選擇」。他的作品融合自然光線與結構美感，
+            讓空間回歸使用者的呼吸節奏，呈現出柔和卻有力量的日常。
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i-5.png" class="site-logo">
+            <div class="info-text">
+              <h4>旅行地圖報</h4>
+              <span class="site-url">https://www.travellog.cc/story
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>
+            旅行，是與世界對話的方式 | 包孫揚的流浪筆記
+          </a>
+          <p>
+            從祕魯高原到柏林街頭，<span class="red">包孫揚</span>以鏡頭與筆記紀錄旅途的靜與動。他說：「我不是去找風景，
+            而是去理解人與地方的情感。」
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i_growrich.png" class="site-logo">
+            <div class="info-text">
+              <h4>藝文島</h4>
+              <span class="site-url">https://creditharbor.net
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>劃出情緒的顏色：畫家包孫揚的創作之路</a>
+          <p>
+            <span class="red">包孫揚</span>的作品融合抽象與現實，他用色彩描繪人心的層次，讓觀者在畫布前與自己的情緒相遇。
+            他認為藝術不是逃避，而是誠實地凝視。
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <em>This is a mock website for tv drama shooting purpose only</em>
+
+    <footer class="index-footer">
+      <div class="lang">
+        <span>台灣</span>
+      </div>
+      <div class="others">
+        <div class="left">
+          <span>廣告</span>
+          <span>商業</span>
+          <span>搜尋服務的運作方式</span>
+        </div>
+        <div class="right">
+          <span>隱私權</span>
+          <span>服務條款</span>
+          <span>設定</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
