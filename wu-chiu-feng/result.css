@@ -137,6 +137,10 @@ html {
   position: relative;
   display: flex;
   align-items: center;
+
+  button[type="submit"] {
+    display: none;
+  }
 }
 .search-container input {
   width: 100%;
@@ -157,6 +161,14 @@ html {
 }
 .search-container .icon-group img {
   width: 20px;
+
+  &.clear-btn {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }
 .main-container header .upper .right {
   display: flex;
@@ -221,7 +233,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 36px;
-  margin-bottom: 300px;
+  margin-bottom: 60px;
 }
 .site-result article {
   display: flex;
@@ -242,7 +254,7 @@ html {
   color: #231815;
 }
 .site-result article .site-info .info-text h4 {
-  font-weight: 600;
+  font-weight: 500;
 }
 .site-result article .site-info .info-text .site-url {
   display: flex;
@@ -273,8 +285,8 @@ html {
 /* FOOTER */
 .index-footer {
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -298,4 +310,8 @@ html {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+em {
+  color: white;
 }

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>搜尋結果 | 撫遠街爆炸案</title>
+
+  <!-- 網站 icon -->
+  <link rel="icon" href="./assets/icons/favicon.png" type="image/png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/wu-chiu-feng/result.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <div class="upper">
+        <div class="left">
+          <img src="./assets/images/tiny_logo.webp" class="tiny-logo" onclick="backToHome()">
+          <form class="search-container" action="#" onsubmit=handleReSearch(event)>
+            <input id="result-input" type="text" value="撫遠街爆炸案">
+            <div class="icon-group">
+              <img src="./assets/icons/close_icon.png" class="clear-btn" onclick="handleClearInput()">
+              <img src="./assets/icons/mic_icon.png">
+              <img src="./assets/icons/camera_icon.png">
+              <img src="./assets/icons/seach_icon.png">
+            </div>
+            <button type="submit">search</button>
+          </form>
+        </div>
+        <div class="right">
+          <span>Qmail</span>
+          <span>圖片</span>
+          <img src="./assets/icons/apps.png" alt="apps_icon" class="app-icon" />
+          <img src="./assets/icons/avatar-3.png" alt="avatar_icon" class="avatar-icon" />
+        </div>
+      </div>
+      <div class="lower">
+        <span>全部</span>
+        <span>圖片</span>
+        <span>新聞</span>
+        <span>影片</span>
+        <span>購物</span>
+        <span>地圖</span>
+        <span>短片</span>
+        <span>更多選項
+          <img src="./assets/icons/down_icon.png" class="down-icon">
+        </span>
+      </div>
+    </header>
+
+    <main class="result-main">
+      <div class="site-result" style="margin-top: 24px;">
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i-1101-1.png" class="site-logo">
+            <div class="info-text">
+              <h4>開放知識庫</h4>
+              <span class="site-url">https://www.openarchive.com
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>撫遠街樓房爆炸大火</a>
+          <p>
+            撫遠街樓房爆炸大火，又稱為<span class="red">撫遠街爆炸案</span>，是1979年7月13日晚上11時25分發生於臺灣臺北市
+            松山區撫遠街403巷的一起爆炸事件，並引發火災，造成33死20傷，並造成...
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i-1101-2.png" class="site-logo">
+            <div class="info-text">
+              <h4>全球即時新聞網</h4>
+              <span class="site-url">https://www.globaldailynews.net
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>撫遠街爆炸案瞬間奪33人命！</a>
+          <p>
+            撫遠街樓房爆炸大火，又稱為<span class="red">撫遠街爆炸案</span>，是1979年7月13日晚上11時25分發生於臺灣臺北市
+            松山區撫遠街403巷的一起爆炸事件，並引發火災，造成33死20傷，並造成房屋全...
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i_growrich.png" class="site-logo">
+            <div class="info-text">
+              <h4>東亞先鋒報</h4>
+              <span class="site-url">https://www.eastasiaherald.com
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>撫遠街爆炸案</a>
+          <p>
+            1979年7月13日－一九七九年七月十三號晚上十一點十八分，台北<span class="red">撫遠街</span>突然一聲
+            <span class="red">爆炸</span>巨響，三棟連棟公寓從中間炸開，從一樓炸到五樓。從這個角度來看，整棟公寓變成空心，
+            樓地板...
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i-1101-4.png" class="site-logo">
+            <div class="info-text">
+              <h4>今日之聲新聞</h4>
+              <span class="site-url">https://www.voicenews.today
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>1979年北市撫遠街爆炸33死化工廠藏民宅釀災|今日報</a>
+          <p>
+            1979年7月13日台北市<span class="red">撫遠街</span>發生<span class="red">爆炸</span>火災案，造成33人喪生，
+            44人受輕傷。據警方鑑識人員勘查，認為禍首是撫遠街403巷10號曄星實業股份有限公司堆積的化工原料...
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i-1101-5.png" class="site-logo">
+            <div class="info-text">
+              <h4>深度評論誌</h4>
+              <span class="site-url">https://www.theobserverline.com
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>
+            【新聞專題】1979年撫遠街大爆炸夷平公寓33死
+          </a>
+          <p>
+            台北<span class="red">撫遠街</span>突然一聲<span class="red">爆炸</span>巨響，三棟的連棟公寓從中間炸開，
+            從一樓炸到五樓，從這個角度看，整棟公寓變成空心，樓地板通通不見，爆炸瞬間房屋全部塌陷，現場哀嚎...
+          </p>
+        </article>
+
+        <article>
+          <div class="site-info">
+            <img src="./assets/icons/i_growrich.png" class="site-logo">
+            <div class="info-text">
+              <h4>華訊網</h4>
+              <span class="site-url">https://huaxunnews.tw
+                <img src="./assets/icons/more_icon.png" class="more-icon">
+              </span>
+            </div>
+          </div>
+          <a>1979年撫遠街爆炸案有故事熱心救人卻與妻子天人永隔</a>
+          <p>
+            1979年7月13日午夜，靜謐夜晚突然傳來巨響，陣陣<span class="red">爆炸</span>聲後，<span class="red">撫遠街</span>403巷10號
+            住宅被炸出一個通天大洞，緊接著竄出火舌，四周傳出濃烈的惡臭，火勢迅速蔓延開，延燒...
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <em>This is a mock website for tv drama shooting purpose only</em>
+
+    <footer class="index-footer">
+      <div class="lang">
+        <span>台灣</span>
+      </div>
+      <div class="others">
+        <div class="left">
+          <span>廣告</span>
+          <span>商業</span>
+          <span>搜尋服務的運作方式</span>
+        </div>
+        <div class="right">
+          <span>隱私權</span>
+          <span>服務條款</span>
+          <span>設定</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
