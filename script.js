@@ -9,6 +9,8 @@ function handleSearch(event) {
   // } else
   if (searchTerm.includes("撫遠街爆炸案")) {
     window.location.assign("explode.html");
+  } else if (searchTerm.includes("理財老師龔淑貞")) {
+    window.location.assign("gong-shu-zhen.html");
   }
 }
 
